@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -16,13 +18,19 @@
     ;
 }
 
+body {
+    background-color: #f1f1f1;
+    color: #0f141e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
 header {
     background-color: blue;
     grid-area: header;
 }
 
 main {
-    background-color: brown;
     grid-area: main;
 }
 
@@ -35,11 +43,16 @@ img {
     width: 30px;
 }
 
-.navfoot ul{
-    list-style: none;
-    display: flex;
-    /* flex-direction: row; */
+a {
+    color: #0f141e;
+    text-decoration: none;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*main*/
 
 .Jumbotron {
     width: 1fr;
@@ -73,4 +86,41 @@ img {
     background-color: #ebf654;
 } 
 
+/*input+btn*/
 
+.sing {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.form-groupe input {
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #000;
+    font-family: inherit;
+    color: #0f141e;
+    padding: 5px 2px;
+    outline: none;
+}
+
+/* footer */
+
+.navfoot ul{
+    list-style: none;
+    display: flex;
+    /* flex-direction: row; */
+}
