@@ -52,6 +52,13 @@ a:hover {
     text-decoration: underline;
 }
 
+/* header */
+
+.page {
+    margin: 5px;
+    padding: auto;
+}
+
 /*main*/
 
 .Jumbotron {
