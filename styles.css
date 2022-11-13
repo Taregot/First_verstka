@@ -9,7 +9,7 @@
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 100px auto auto;
+    grid-template-columns: auto;
     grid-template-rows: auto auto 50px;
     grid-template-areas: 
         "header main main"
@@ -26,7 +26,6 @@ body {
 }
 
 header {
-    background-color: blue;
     grid-area: header;
 }
 
@@ -55,8 +54,25 @@ a:hover {
 /* header */
 
 .page {
-    margin: 5px;
-    padding: auto;
+    margin: 10px;
+    border: 1px solid grey;
+    background: #f58361;
+    position: relative;
+    top: 15%;
+}
+
+.page ul {
+    list-style: none;
+}
+
+.page li {
+    padding: 10px 5px 25px 5px;
+}
+
+.logo {
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
 }
 
 /*main*/
@@ -83,14 +99,17 @@ a:hover {
 
 .blue {
     background-color: #41f5f2;
+    border: 1px solid grey;
 }
 
 .green {
     background-color: #1ff956;
+    border: 1px solid grey;
 }
 
 .yellow {
     background-color: #ebf654;
+    border: 1px solid grey;
 } 
 
 /*input+btn*/
