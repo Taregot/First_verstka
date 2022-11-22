@@ -10,7 +10,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto 50px;
+    grid-template-rows: auto auto 60px;
     grid-template-areas: 
         "header main main"
         "header main main"
@@ -145,8 +145,24 @@ a:hover {
 
 /* footer */
 
-.navfoot ul{
+.foot {
+    margin: 5px 5px 0 5px;
+}
+ 
+.pic {
+    position: relative;
+    float: right;
+}
+
+.foot ul {
     list-style: none;
-    display: flex;
-    /* flex-direction: row; */
+}
+
+.foot li {
+    display: inline;
+    padding: 5px 5px;
+}
+
+.laib {
+    padding: 5px 5px; 
 }
